@@ -1,6 +1,6 @@
 settings:
   title: 'Eric's Status Page'
-  url: 'https://status-page.223144.xyz' # used for Eric messages
+  url: 'https://status-page.223144.xyz/' # used for Eric messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
