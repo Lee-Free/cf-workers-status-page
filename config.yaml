@@ -5,14 +5,14 @@ settings:
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
-  allmonitorsOperational: 'All Systems Operational'
-  notAllmonitorsOperational: 'Not All Systems Operational'
+  allmonitorsOperational: '所有网站都正常运行'
+  notAllmonitorsOperational: '部分网站运行故障'
   monitorLabelOperational: 'Operational'
   monitorLabelNotOperational: 'Not Operational'
   monitorLabelNoData: 'No data'
   dayInHistogramNoData: 'No data'
-  dayInHistogramOperational: 'All good'
-  dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
+  dayInHistogramOperational: '一切良好'
+  dayInHistogramNotOperational: '出现故障' # xx incident(s) recorded
 
 monitors:
   - id: 肥龙的网站监控 # unique identifier
@@ -37,3 +37,4 @@ monitors:
     url: 'https://imghost.223144.xyz'
     method: GET
     expectStatus: 200
+    linkable: true # allows the title to be a link, default=true
